@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Remove state.file
+      file:
+        path: /home/vagrant/state.file
+        state: absent
+      become: true
